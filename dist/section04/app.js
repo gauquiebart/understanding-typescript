@@ -1,8 +1,11 @@
 "use strict";
-const userNamez = `Max`;
+var userNamez = "Max";
 //userNamez = `Maxi`; // does not work ... 
-let age = 30;
+var age = 30;
 age = 29;
-const adder = (a = 1, b) => a + b;
+var adder = function (a, b) {
+    if (a === void 0) { a = 1; }
+    return a + b;
+};
 console.log(adder(undefined, 33));
 //# sourceMappingURL=app.js.map

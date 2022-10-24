@@ -19,14 +19,14 @@
 //for (const hobby of person.hobbies) {
 // console.log(hobby.toUpperCase()); //typescript inference infers that hobby is of type string
 //}
-const person2 = {
+var person2 = {
     name: 'Bart',
     age: 27
 };
 //object type inferred by typescript: object (no more info
 //console.log(person2); //works
 //console.log(person2.name); //does not work
-const person3 = {
+var person3 = {
     name: 'Bart',
     age: 27
 };
@@ -34,10 +34,10 @@ const person3 = {
 //console.log(person3); //works
 //console.log(person3.name); //works again
 //=> better to use person ... and let typescript infer all this
-let favouriteActivities = [];
+var favouriteActivities = [];
 favouriteActivities.push('abc');
 //console.log(favouriteActivities);
-let anyTypesArray = [];
+var anyTypesArray = [];
 //console.log(anyTypesArray);
 var Role;
 (function (Role) {
@@ -46,14 +46,14 @@ var Role;
     Role[Role["AUTHOR"] = 2] = "AUTHOR";
 })(Role || (Role = {}));
 ;
-const person = {
-    name: `Bart`,
+var person = {
+    name: "Bart",
     age: 27,
-    hobbies: [`Sports`, `Cooking`],
+    hobbies: ["Sports", "Cooking"],
     role: Role.ADMIN
 };
 console.log(person);
 if (person.role === Role.ADMIN) {
-    console.log(`admin`);
+    console.log("admin");
 }
 //# sourceMappingURL=objs-arrays-enums.js.map
